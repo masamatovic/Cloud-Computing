@@ -1,15 +1,14 @@
 package com.cloud.webapp.Model;
 
 
-import javax.persistence.*;
 
-@Entity
+//@Entity
 public class Counter {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column
+//    @Column
     private Integer count;
 
     public Counter() {
