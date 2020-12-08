@@ -21,8 +21,8 @@ public class CounterController {
 */
     @GetMapping("/env")
     public String getEnv() {
-       // return System.getenv("POSTGES_CONNECTION_STING");
-        return "Hello from dokcer";
+        return System.getenv("POSTGES_CONNECTION_STING");
+        //return "Hello from docker";
     }
 
 }
