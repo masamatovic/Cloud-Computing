@@ -14,11 +14,11 @@ public class CounterController {
     @Autowired
     CounterService counterService;
 
-  /*  @RequestMapping("/")
+    @RequestMapping("/")
     public String index() {
         return counterService.inc().toString();
     }
-*/
+
     @GetMapping("/env")
     public String getEnv() {
         return System.getenv("POSTGES_CONNECTION_STING");

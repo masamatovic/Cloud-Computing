@@ -10,10 +10,10 @@ import java.util.List;
 @Service
 public class CounterService {
 
-  //  @Autowired
-  //  CounterRepository counterRepository;
+    @Autowired
+    CounterRepository counterRepository;
 
-    /*public Integer inc(){
+    public Integer inc(){
         Counter c = counterRepository.findById((long)1).orElse(null);
         if ( c == null){
             Counter counter = new Counter();
@@ -26,5 +26,5 @@ public class CounterService {
             return c.getCount();
         }
 
-    }*/
+    }
 }
