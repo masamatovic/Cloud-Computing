@@ -4,9 +4,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 8081, host: 8081
 
   config.vm.provision "file", source: "webapp", destination: "webapp"
-  config.vm.provision "file", source: "./webapp/docker-compose.yml", destination: "./webapp/docker-compose.yml"
-
+  config.vm.provision "file", source: "docker-compose.yml", destination: "docker-compose.yml"
   config.vm.provision :shell, path: "dokerskripta.sh"
-
 
 end

@@ -52,7 +52,6 @@ services:
       - "80:80"
     links:
       - webapp
-
   nginx_load_balancer:
     build: ./nginxLoadBalancer
     container_name: nginx_load_balancer
@@ -64,3 +63,4 @@ services:
 
 volumes:
   postgres-data:
+
