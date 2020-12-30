@@ -16,7 +16,8 @@ public class CounterController {
 
     @RequestMapping("/")
     public String index() {
-        return counterService.inc().toString();
+        String env = System.getenv("APP_NAME");
+        return counterService.inc().toString() + "\n\n" + env;
     }
 
     @GetMapping("/env")
